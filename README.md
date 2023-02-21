@@ -22,9 +22,14 @@ To install the necessary dependencies here it is inquirer, run the following com
 
 ## Usage
 To run the application, use the following command:
+
 ![This is an image](./image/run.jpg)
 
 The application will then prompt you to answer a series of questions about your project. Once you have answered all of the questions, the application will generate a README.md file in the current directory.
+
+## WalkThrough
+This video is a walkthrough to the project and the final output
+
 
 ## License
 This project is licensed under the MIT license.
@@ -38,7 +43,10 @@ To run the tests, use the following command:
 
 ## URL
 
-GitHub url: [GitHub Pages](https://pages.github.com/)
+GitHub url: [https://github.com/LalyF/ReadMeGenerator.git]
+
+
+![This is an image](./image/github.jpg)
 
 ## Questions
 If you have any questions about the project, please feel free to contact me at lalymanaf2015@gmail.com. You can find more of my work at LalyF.
