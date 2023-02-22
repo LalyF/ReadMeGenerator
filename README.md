@@ -32,6 +32,10 @@ The application will then prompt you to answer a series of questions about your 
 This video is a walkthrough to the project and the final output
 
 
+https://user-images.githubusercontent.com/117308765/220500809-3792d45b-444c-47e5-a9a9-dcd8a6be42b1.mp4
+
+
+
 ## License
 This project is licensed under the MIT license.
 
