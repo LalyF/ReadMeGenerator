@@ -14,6 +14,7 @@ This is a Node.js command-line application that generates a high-quality README.
 ## Installation
 
 To create a Node.js project
+
 ![This is an image](./image/init.jpg)
 
 To install the necessary dependencies here it is inquirer, run the following command:
