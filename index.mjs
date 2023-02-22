@@ -1,8 +1,9 @@
+//imported the dependencies
 import inquirer from "inquirer";
 import fs from "fs/promises";
 
-
-let {title,description,table,installation,usage,license,contributing,test,questions}=await inquirer
+//Prompt the user questions to populate the README.md
+let {title,description,installation,usage,license,contributing,test,github,email}=await inquirer
 .prompt([
    { type: 'input',
     name: 'title',
@@ -12,10 +13,7 @@ let {title,description,table,installation,usage,license,contributing,test,questi
      name: 'description',
      message:'Input the project description: ',
   },
-  {  type: 'input',
-     name: 'table',
-    message:'Input the tabele of contents: ',
-  },
+  
   { type: 'input',
    name: 'installation',
    message:'Input the installation methods: ',
@@ -37,54 +35,71 @@ let {title,description,table,installation,usage,license,contributing,test,questi
 },
   { type: 'input',
    name: 'contributing',
-   message:'Input the usage instruction: ',
+   message:'Input the contributing guidelines: ',
   },
   { type: 'input',
    name: 'test',
    message:'Input the test instruction: ',
   },
   { type: 'input',
-  name: 'questions',
-  message:'Ask any questions: ',
+  name: 'github',
+  message:'Enter your github username: ',
+ },
+ { type: 'input',
+  name: 'email',
+  message:'Enter your email-id: ',
  },
 
 ])
-console.log(title+" "+description);
+//console.log(title+" "+description);
 
 let readmetxt=
 `
-# Project Title
-${title}
+# ${title}              ${generatelicense(license)}
+
 
 ## Description
+
 ${description}
 
 
 ## Table of Contents
-${table}
 
-## Installation
+- [Installation](#install)
+- [Usage](#use)
+- [License](#license)
+- [Contributing](#contrbute)
+- [Tests](#test)
+- [Questions](#question)
+
+## Installation <a id="install"></a>
+
 ${installation}
 
-## Usage
+## Usage <a id="use"></a>
 
 ${usage}
 
-## License
-${generatelicense(license)}
+## License <a id="license"></a>
 
-## Contributing
+This project is licensed under ${license} ${generatelicense(license)}
+
+## Contributing <a id="contrbute"></a>
+
 ${contributing}
 
-## Tests
+## Tests <a id="test"></a>
+
 ${test}
 
-## Questions
-${questions}
+## Questions <a id="question"></a>
 
-
-
+For questions or feedback, please contact me at ${email}. You can also find my other work on GitHub at https://github.com/${github}.
 `
+
+
+
+
 
 fs.writeFile("README1.md",readmetxt)
 
