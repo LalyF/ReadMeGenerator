@@ -55,15 +55,15 @@ let {title,description,installation,usage,license,contributing,test,github,email
 
 let readmetxt=
 `
-# ${title}              ${generatelicense(license)}
+# 📖${title}              ${generatelicense(license)}
 
 
-## Description
+## 📝Description
 
 ${description}
 
 
-## Table of Contents
+## 📑Table of Contents
 
 - [Installation](#install)
 - [Usage](#use)
@@ -72,27 +72,27 @@ ${description}
 - [Tests](#test)
 - [Questions](#question)
 
-## Installation <a id="install"></a>
+## 🧑‍🏫Installation <a id="install"></a>
 
 ${installation}
 
-## Usage <a id="use"></a>
+## 👤Usage <a id="use"></a>
 
 ${usage}
 
-## License <a id="license"></a>
+## 🎖️License <a id="license"></a>
 
 This project is licensed under ${license} ${generatelicense(license)}
 
-## Contributing <a id="contrbute"></a>
+## 👤Contributing <a id="contrbute"></a>
 
 ${contributing}
 
-## Tests <a id="test"></a>
+## 📝Tests <a id="test"></a>
 
 ${test}
 
-## Questions <a id="question"></a>
+## ❔Questions <a id="question"></a>
 
 For questions or feedback, please contact me at ${email}. You can also find my other work on GitHub at https://github.com/${github}.
 `
